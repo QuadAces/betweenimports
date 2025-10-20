@@ -1,55 +1,55 @@
 import React from "react";
 
+
 const Login = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-lg shadow-md">
-        <div>
-          <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md">
+        <div className="mb-6">
+          <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 text-sm">
+            Please sign up for a wholesale account to view site. Shops and resellers only. Email us at <a href="mailto:info@betweenimports.com" className="underline">info@betweenimports.com</a> for more information.
+          </div>
         </div>
-        <form className="mt-8 space-y-6" action="#" method="POST">
-          <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="email-address" className="sr-only">Email address</label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black focus:z-10 sm:text-sm"
-                placeholder="Email address"
-              />
-            </div>
-            <div className="mt-4">
-              <label htmlFor="password" className="sr-only">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black focus:z-10 sm:text-sm"
-                placeholder="Password"
-              />
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <div className="text-sm">
-              <a href="#" className="font-medium text-gray-600 hover:text-black">Forgot your password?</a>
-            </div>
-          </div>
-
+        <h1 className="text-2xl font-bold text-gray-900 mb-2">Login</h1>
+        <form className="space-y-6 w-full" action="#" method="POST">
           <div>
-            <button
-              type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-            >
-              Sign In
-            </button>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black sm:text-sm"
+              placeholder="Email"
+            />
           </div>
+          <div>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autoComplete="current-password"
+              required
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-black focus:border-black sm:text-sm"
+              placeholder="Password"
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <a href="#" className="text-sm text-gray-600 hover:text-black">Forgot your password?</a>
+          </div>
+          <button
+            type="submit"
+            className="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+          >
+            Sign In
+          </button>
         </form>
+        <div className="flex flex-col items-start mt-6 space-y-2">
+          <a href="/account/register" className="text-sm text-gray-700 hover:text-black underline">Create account</a>
+          <a href="/" className="text-sm text-gray-700 hover:text-black underline">Return to Store</a>
+        </div>
       </div>
     </div>
   );

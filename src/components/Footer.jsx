@@ -17,9 +17,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+61293454293" className="hover:text-white transition-colors">
-                  +61 2 9345 4293
+                <a href="tel:+61296653866" className="hover:text-white transition-colors">
+                  +61-2-9665-3866
                 </a>
+                <div className="mt-2 text-gray-400 text-sm">
+                  PO Box 377 Coogee NSW 2034 Australia
+                </div>
               </li>
             </ul>
           </div>
