@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#2D3748" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Stylized incense stick -->
+  <line x1="50" y1="70" x2="50" y2="25" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Smoke wisps -->
+  <path d="M 50 25 Q 45 20 47 15" fill="none" stroke="#A0AEC0" stroke-width="1.5" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 50 25 Q 55 18 53 12" fill="none" stroke="#A0AEC0" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  
+  <!-- Glowing tip -->
+  <circle cx="50" cy="25" r="3" fill="#D4AF37"/>
+  <circle cx="50" cy="25" r="2" fill="#F6E05E"/>
+</svg>
