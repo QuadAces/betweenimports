@@ -8,7 +8,7 @@ const Collections = () => {
       title: 'Artificial Plants',
       category: 'ArtificialPlants',
       images: [
-        '/images/ArtificialPlants/ArtificialPlants-1.jpg',
+          '/images/ArtificialPlants/hero.jpg',
         '/images/ArtificialPlants/ArtificialPlants-2.jpg',
       ],
     },

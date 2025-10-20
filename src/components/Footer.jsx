@@ -4,14 +4,21 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Customer Information Section */}
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* Latest News */}
+          {/* Contact Information */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Latest News</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <a href="/blog" className="hover:text-white transition-colors">
-                  View all posts
+                <a href="mailto:info@betweenimports.com" className="hover:text-white transition-colors">
+                  info@betweenimports.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+61293454293" className="hover:text-white transition-colors">
+                  +61 2 9345 4293
                 </a>
               </li>
             </ul>
@@ -29,6 +36,11 @@ const Footer = () => {
               <li>
                 <a href="/retail" className="hover:text-white transition-colors">
                   Retail
+                </a>
+              </li>
+              <li>
+                <a href="/application" className="hover:text-white transition-colors">
+                  Application Form
                 </a>
               </li>
             </ul>
