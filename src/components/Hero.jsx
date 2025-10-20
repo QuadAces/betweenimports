@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
     '/hero/hero-1.jpg',
@@ -42,16 +44,20 @@ const Hero = () => {
 
       {/* Hero Slideshow */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="relative bg-gray-200 rounded-lg overflow-hidden" style={{ height: '500px' }}>
+        <div className="relative bg-gray-200 rounded-lg overflow-hidden cursor-pointer" style={{ height: '500px' }}
+        onClick={() => {
+          navigate("/login")
+        }}>
             {/* Hero Images */}
             {heroImages.map((image, index) => (
               <img 
                 key={index}
                 src={image} 
                 alt={`Between Imports Hero ${index + 1}`} 
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 cursor-pointer ${
                   index === currentSlide ? 'opacity-100' : 'opacity-0'
                 }`}
+                onClick={() => navigate('/login')}
               />
             ))}
           

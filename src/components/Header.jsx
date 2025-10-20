@@ -23,23 +23,11 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 flex-1 justify-center">
             <a href="/" className="text-gray-700 hover:text-gray-900 font-medium">Home</a>
-            <a href="/shop" className="text-gray-700 hover:text-gray-900 font-medium">Shop</a>
-            <a href="/about" className="text-gray-700 hover:text-gray-900 font-medium">About</a>
+            <a href="/login" className="text-gray-700 hover:text-gray-900 font-medium">Login</a>
           </nav>
 
           {/* Right Side - Cart & Search */}
           <div className="flex-1 flex justify-end items-center space-x-4">
-            <button className="text-gray-700 hover:text-gray-900">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
-            <button className="text-gray-700 hover:text-gray-900">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-              </svg>
-            </button>
-            
             {/* Mobile Menu Button */}
             <button 
               className="md:hidden text-gray-700 hover:text-gray-900"
@@ -56,8 +44,7 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pb-4 space-y-2">
             <a href="/" className="block text-gray-700 hover:text-gray-900 py-2">Home</a>
-            <a href="/shop" className="block text-gray-700 hover:text-gray-900 py-2">Shop</a>
-            <a href="/about" className="block text-gray-700 hover:text-gray-900 py-2">About</a>
+            <a href="/login" className="block text-gray-700 hover:text-gray-900 py-2">Login</a>
           </nav>
         )}
       </div>
