@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="relative bg-gray-200 rounded-lg overflow-hidden" style={{ height: '500px' }}>
             {/* Hero Image */}
             <img 
-              src="/images/ArtificialPlants/hero.jpg" 
+              src="/hero.jpg" 
               alt="Between Imports Hero" 
               className="absolute inset-0 w-full h-full object-cover"
             />

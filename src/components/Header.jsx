@@ -15,9 +15,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-6">
           {/* Logo */}
           <div className="flex-1">
-            <h1 className="text-2xl md:text-3xl font-serif tracking-wide">
-              <a href="/" className="hover:text-gray-700">In Between Imports</a>
-            </h1>
+            <a href="/" className="hover:opacity-80 transition-opacity">
+              <img src="/logo.jpg" alt="In Between Imports" className="h-12 md:h-16" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
