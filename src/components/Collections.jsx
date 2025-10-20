@@ -9,6 +9,10 @@ const Collections = () => {
       category: 'ArtificialPlants',
       images: [
         '/images/ArtificialPlants/ArtificialPlants-1.jpg',
+        '/images/ArtificialPlants/ArtificialPlants-2.jpg',
+        '/images/ArtificialPlants/ArtificialPlants-3.jpg',
+        '/images/ArtificialPlants/ArtificialPlants-4.jpg',
+        '/images/ArtificialPlants/ArtificialPlants-5.jpg',
       ],
     },
     {
@@ -20,8 +24,6 @@ const Collections = () => {
         '/images/DesignerPlanters/DesignerPlanters-3.jpg',
         '/images/DesignerPlanters/DesignerPlanters-4.jpg',
         '/images/DesignerPlanters/DesignerPlanters-5.jpg',
-        '/images/DesignerPlanters/DesignerPlanters-6.jpg',
-        '/images/DesignerPlanters/DesignerPlanters-7.jpg',
       ],
     },
     {
@@ -31,6 +33,8 @@ const Collections = () => {
         '/images/Jewellery/Jewellery-1.jpg',
         '/images/Jewellery/Jewellery-2.jpg',
         '/images/Jewellery/Jewellery-3.jpg',
+        '/images/Jewellery/Jewellery-4.jpg',
+        '/images/Jewellery/Jewellery-5.jpg',
       ],
     },
     {
@@ -39,6 +43,9 @@ const Collections = () => {
       images: [
         '/images/ModernHomeware/ModernHomeware-1.jpg',
         '/images/ModernHomeware/ModernHomeware-2.jpg',
+        '/images/ModernHomeware/ModernHomeware-3.jpg',
+        '/images/ModernHomeware/ModernHomeware-4.jpg',
+        '/images/ModernHomeware/ModernHomeware-5.jpg',
       ],
     },
   ];

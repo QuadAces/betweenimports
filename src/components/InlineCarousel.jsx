@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const InlineCarousel = ({ title, images, category }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => 
@@ -19,6 +21,10 @@ const InlineCarousel = ({ title, images, category }) => {
     setCurrentIndex(index);
   };
 
+  const handleImageClick = () => {
+    navigate('/login');
+  };
+
   return (
     <div className="group">
       {/* Title */}
@@ -34,7 +40,8 @@ const InlineCarousel = ({ title, images, category }) => {
           {images.map((image, index) => (
             <div 
               key={index}
-              className="min-w-full h-full"
+              className="min-w-full h-full cursor-pointer"
+              onClick={handleImageClick}
             >
               <img
                 src={image}
