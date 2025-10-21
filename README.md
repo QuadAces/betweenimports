@@ -1,6 +1,6 @@
-# In Between Imports Clone
+# Between Imports Clone
 
-A React + Vite + Tailwind CSS project that replicates the design of [inbetweenimports.com](https://www.inbetweenimports.com/), an e-commerce site for premium incense and aromatic products.
+A React + Vite + Tailwind CSS project that replicates the design of [betweenimports.com](https://www.betweenimports.com/), an e-commerce site for premium incense and aromatic products.
 
 ## Features
 

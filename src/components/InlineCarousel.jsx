@@ -5,19 +5,22 @@ const InlineCarousel = ({ title, images, category }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
-  const nextSlide = () => {
+  const nextSlide = (e) => {
+    e.stopPropagation();
     setCurrentIndex((prevIndex) => 
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const prevSlide = () => {
+  const prevSlide = (e) => {
+    e.stopPropagation();
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index, e) => {
+    e.stopPropagation();
     setCurrentIndex(index);
   };
 
@@ -78,7 +81,7 @@ const InlineCarousel = ({ title, images, category }) => {
           {images.map((_, index) => (
             <button
               key={index}
-              onClick={() => goToSlide(index)}
+              onClick={(e) => goToSlide(index, e)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex 
                   ? 'bg-white w-6' 
@@ -96,7 +99,9 @@ const InlineCarousel = ({ title, images, category }) => {
       </div>
 
       {/* Shop Button */}
-      <button className="mt-4 w-full bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors text-sm font-medium">
+      <button 
+        onClick={handleImageClick}
+        className="mt-4 w-full bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors text-sm font-medium">
         Shop {title}
       </button>
     </div>

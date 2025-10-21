@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle newsletter subscription
-    console.log('Subscribe:', email);
-    setEmail('');
+    // No email logic - just redirect to thank you page
+    navigate('/thank-you');
   };
 
   return (

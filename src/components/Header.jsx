@@ -16,7 +16,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-1">
             <a href="/" className="hover:opacity-80 transition-opacity">
-              <img src="/logo.jpg" alt="In Between Imports" className="h-12 md:h-16" />
+              <img src="/logo.jpg" alt="Between Imports" className="h-12 md:h-16" />
             </a>
           </div>
 

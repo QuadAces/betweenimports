@@ -20,15 +20,18 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, [heroImages.length]);
 
-  const goToSlide = (index) => {
+  const goToSlide = (index, e) => {
+    e.stopPropagation();
     setCurrentSlide(index);
   };
 
-  const nextSlide = () => {
+  const nextSlide = (e) => {
+    e.stopPropagation();
     setCurrentSlide((prev) => (prev + 1) % heroImages.length);
   };
 
-  const prevSlide = () => {
+  const prevSlide = (e) => {
+    e.stopPropagation();
     setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
   };
 
@@ -101,7 +104,7 @@ const Hero = () => {
             {heroImages.map((_, index) => (
               <button 
                 key={index}
-                onClick={() => goToSlide(index)}
+                onClick={(e) => goToSlide(index, e)}
                 className={`w-3 h-3 rounded-full transition-colors ${
                   index === currentSlide ? 'bg-gray-800' : 'bg-gray-400'
                 }`}
