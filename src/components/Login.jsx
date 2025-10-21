@@ -1,7 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can add login logic here
+    navigate("/thank-you");
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md">
@@ -11,7 +20,7 @@ const Login = () => {
           </div>
         </div>
         <h1 className="text-2xl font-bold text-gray-900 mb-2">Login</h1>
-        <form className="space-y-6 w-full" action="#" method="POST">
+  <form className="space-y-6 w-full" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
             <input
@@ -47,8 +56,8 @@ const Login = () => {
           </button>
         </form>
         <div className="flex flex-col items-start mt-6 space-y-2">
-          <a href="/account/register" className="text-sm text-gray-700 hover:text-black underline">Create account</a>
-          <a href="/" className="text-sm text-gray-700 hover:text-black underline">Return to Store</a>
+          <a href="/login" className="text-sm text-gray-700 hover:text-black underline">Create account</a>
+          <a href="/login" className="text-sm text-gray-700 hover:text-black underline">Return to Store</a>
         </div>
       </div>
     </div>
