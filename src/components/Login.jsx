@@ -46,7 +46,7 @@ const Login = () => {
             />
           </div>
           <div className="flex items-center justify-between">
-            <a href="#" className="text-sm text-gray-600 hover:text-black">Forgot your password?</a>
+            <a href="mailto:info@betweenimports.com" className="text-sm text-gray-600 hover:text-black">Forgot your password?</a>
           </div>
           <button
             type="submit"
