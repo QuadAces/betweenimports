@@ -57,7 +57,7 @@ const Login = () => {
         </form>
         <div className="flex flex-col items-start mt-6 space-y-2">
           <a href="/login" className="text-sm text-gray-700 hover:text-black underline">Create account</a>
-          <a href="/login" className="text-sm text-gray-700 hover:text-black underline">Return to Store</a>
+          <a href="/" className="text-sm text-gray-700 hover:text-black underline">Return to Store</a>
         </div>
       </div>
     </div>
